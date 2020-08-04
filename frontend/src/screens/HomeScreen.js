@@ -15,7 +15,7 @@ const HomeScreen = {
       return `<div>Error in getting data</div>`
     }
     const products = response.data
-    //Getting data from server
+    //Object with data from server
 
     return `
       <ul class="products">
