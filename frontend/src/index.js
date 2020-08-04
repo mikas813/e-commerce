@@ -13,13 +13,13 @@ const routes = {
 const router = async () => {
 
   const request = parseRequestUrl()
-  console.log('re', request)
+
   const parseUrl =
     (request.resource ? `/${request.resource}` : '/') +
     (request.id ? '/:id' : '') +
     (request.verb ? `/${request.verb}` : '')
 
-  //Constant that contains view
+  //Shows content depending on url
   const screen = routes[parseUrl] ? routes[parseUrl] : Error404Screen
 
   //Constant that get main tag put there screen.

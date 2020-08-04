@@ -10,7 +10,8 @@ export default {
       brand: 'Nike',
       rating: 4.5,
       numReviews: 12,
-      countInStock: 5
+      countInStock: 5,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, quo.'
     },
     {
       id: '2',
@@ -21,7 +22,9 @@ export default {
       brand: 'Nike',
       rating: 4.5,
       numReviews: 22,
-      countInStock: 5
+      countInStock: 5,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, quo.'
+
     },
     {
       id: '3',
@@ -32,7 +35,9 @@ export default {
       brand: 'Adidas',
       rating: 4.0,
       numReviews: 9,
-      countInStock: 5
+      countInStock: 5,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, quo.'
+
     },
     {
       id: '4',
@@ -43,7 +48,9 @@ export default {
       brand: 'Puma',
       rating: 3.5,
       numReviews: 2,
-      countInStock: 5
+      countInStock: 5,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, quo.'
+
     },
     {
       id: '5',
@@ -54,7 +61,9 @@ export default {
       brand: 'Mike',
       rating: 2.5,
       numReviews: 32,
-      countInStock: 5
+      countInStock: 5,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, quo.'
+
     },
     {
       id: '6',
@@ -65,7 +74,9 @@ export default {
       brand: 'Bimba',
       rating: 4.5,
       numReviews: 32,
-      countInStock: 5
+      countInStock: 5,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, quo.'
+
     }
   ]
 }
