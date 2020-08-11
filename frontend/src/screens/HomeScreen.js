@@ -25,7 +25,7 @@ const HomeScreen = {
               <a href="/#/product/${product.id}">
                 <img src="${product.image}" alt="${product.name}"/>
                 <div class="product-name">
-                  <a href="/#/product/1">
+                  <a href="/#/product/${product.id}">
                     ${product.name}
                   </a>
                 </div>
@@ -47,7 +47,7 @@ const HomeScreen = {
       ` ).join( '\n' )}
       </ul>  
     `
-  }
+  },
 }
 
 export default HomeScreen

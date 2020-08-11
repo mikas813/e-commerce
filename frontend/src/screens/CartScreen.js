@@ -6,7 +6,7 @@ import {getCartItems, setCartItems} from '../localStorage'
 const addToCart = (item, forceUpdate = false) => {
 
   //Array with items from localStorage
-  let cartItems = getCartItems()
+  let cartItems = getCartItems() //An empty array or with products
 
   const existItem = cartItems.find( x => x.product === item.product )
   if (existItem) {
@@ -22,7 +22,6 @@ const addToCart = (item, forceUpdate = false) => {
   if (forceUpdate) {
     rerender(CartScreen)
   }
-
 }
 
 //Removing from cart function
@@ -33,14 +32,13 @@ const removeFromCart = (id) => {
   } else {
     rerender(CartScreen)
   }
-
 }
 
 //Cart screen object
 const CartScreen = {
 
   after_render: () => {
-    //Action that update state of cart subtotal by changing quantity
+    //Action that update state of cart subtotal by changing q quantity
     const qtySelects = document.getElementsByClassName('qty-select')
     Array.from(qtySelects).forEach(qtySelect => {
       qtySelect.addEventListener('change', (e) => {
@@ -93,7 +91,7 @@ const CartScreen = {
                   </div>
                   <div class="cart-name">
                     <div>
-                      <a href="/product/${item.product}">${item.name}</a>
+                      <a href="/#/product/${item.product}">${item.name}</a>
                     </div>
                   </div>
                   <div>
