@@ -39,7 +39,7 @@ const ProductScreen = {
             <li>
               ${Rating.render({
                 value: product.rating,
-                text: `${product.numReviews} rewievs`
+                text: `${product.numReviews} reviews`
               })}
             </li>
             <li>
